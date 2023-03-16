@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta>
+    <link rel="stylesheet" href="Form.css" /> 
+    <script type="text/javascript" src="Form.js"></script> 
+    <title>Signup Form</title>
+</head>
+
+<body>
+    <div id="formm">
+        <center>
+            <h2>Do a Register..</h2>
+        </center>
+        <div id="div2">
+            <form name="suForm">
+
+                <input type="text" id="fname" placeholder=" First Name " name="fname" />
+                <input type="text" id="lname" placeholder=" Last Name " name="lname" />
+                <input type="date" placeholder="01-01-2003" id="dob" name="dob" />
+                <input type="email" id="email" placeholder="Mail Address" onclick="resetBtn()" name="email" />
+                <input type="tel" id="phno" placeholder="+91 Phone Number" minlength="10" onclick="resetBtn()"
+                    name="phno" />
+                <select name="country" id="countySel" class="s1" size="1">
+                    <option value="" selected="India"></option>
+                </select>
+                <select name="state" id="stateSel" class="s2" size="1">
+                    <option value="" selected="selected" name="state">
+                        ⬅️ select
+                    </option>
+                </select>
+                <select name="district" id="districtSel" class="s3" size="1">
+                    <option value="" selected="selected" name="city">⬅️ State first</option>
+                </select>
+                <input type="password" id="pass" placeholder="Set a Password" onclick="resetBtn()" name="password">
+                <input type="checkbox" name="check1" id="check" onclick="resetBtn()">
+                <label for="check" class="label">I agree to the 'Terms and policies'.</label>
+
+                <input type="submit" id="submit-btn" onmouseover="mouseOver()" onclick="Submit()" value="Sign Up">
+            </form>
+        </div>
+    </div>
+    <div class="formm">
+        <h5 id="name"></h5>
+        <h5 id="do"></h5>
+        <h5 id="se"></h5>
+        <h5 id="mai"></h5>
+        <h5 id="phn"></h5>
+        <h5 id="place"></h5>
+    </div>
+</body>
+<!-- git config --global user.email "ninitrogen@gmail.com"
+git config --global user.name "ninitro3" -->
+
+</html>
